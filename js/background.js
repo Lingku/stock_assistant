@@ -223,7 +223,7 @@ function displayStocks() {
 	for (var i in stockGetInfos) {
 		var stockInfo = stockGetInfos[i];
 		
-		if (n < 5 && stockInfo.stockIndex != Settings.getValue("popupStockPosition", 0)) {
+		if (n < 15 && stockInfo.stockIndex != Settings.getValue("popupStockPosition", 0)) {
 			if ( stockInfo.stockCurrAlertState == 1 ) {
 				sTitle += stockInfo.stockName + "▲" + stockInfo.stockCurrPrice + "(" + stockInfo.stockChangeRate +"%)\r\n";
 			}
